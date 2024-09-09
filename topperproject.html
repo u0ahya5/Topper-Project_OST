@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그 해 우리는</title>
+    <link href="topperproject.css" rel="stylesheet" type="text/css" />
+    <!-- Google Fonts Preconnect 및 폰트 로드 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section></section>
+    <h1>그 해 우리는</h1>
+    <button class="button">Play Music</button>
+    
+    <div class="content-wrapper">
+        <!-- 국연수 부분 -->
+        <div class="character" id="character-goook">
+            <img src="images/thatyeargoook.png" class="character-img" alt="전교 1등 국연수" id="play-audio">
+            <p class="character-text">전교 1등 국연수</p>
+            <div class="description" id="description-goook">
+                돈 걱정 안하고 평범하게 사는 것 연수의 성공 기준이었다. <br>
+                연수 혼자 짊어지는 짐은 생각보다 훨씬 무거웠다. <br>
+                그리고 그 해 고단한 짐을 한 순간 잊게 만드는 사람을 만났다. <br>
+                최 웅이었다.<br> 
+            </div>
+        </div>
+
+        <!-- 최웅 부분 -->
+        <div class="character" id="character-choyoung">
+            <img src="images/thatyearchoyoung.png" class="character-img" alt="전교 꼴등 최 웅">
+            <p class="character-text">전교 꼴등 최 웅</p>
+            <div class="description" id="description-choyoung">
+                혼자 있는게 편하고 여유롭고 평화로운 게 좋다. <br>
+                연수를 만나기 전까진.<br>
+            </div>
+        </div>
+    </div>
+
+    <div class="question" id="what-do-u-think">
+        <p>Q. 두 사람이 생각하기에 10년 후 모습은 어떨 것 같나요?</p>
+    </div>
+
+    <div class="pictureinterview1st">
+        <img src="images/thatyear1stinterview.png" alt="1st Interview">
+    </div>
+
+    <div class="gooksanswer">
+        <p>"뭐 잘 하고 있겠죠 항상 주도적인 삶을 살고 있을 꺼에요"</p>
+        <p>-국연수</p>
+    </div>
+    <div class="wonganswer">
+        <p>"10년후? 29살인가? 평화로웠으면 좋겠어요"</p>
+        <p>-최 웅</p>
+    </div>
+
+    <div class="image-container">
+        <img src="images/wonginterview.jpg" class="wonginterview">
+        <img src="images/gookinterview.jpg" class="gookinterview">
+    </div>
+    <div class = "diviframe">
+        <iframe src = "topperproject_iframe.html" class = "iframe" title="사진 보러가기" ></iframe><br>
+        <a href="topperproject_iframe.html" class = "link">사진 보러가기</a>
+    </div>
+    <!-- 오디오 플레이어 -->
+    <div class="audio-container">
+        <audio id="audio-player" class="audio-player" preload="auto">
+            <source src="audio/christmastree.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <audio id="audio" src="audio/thatyearofyeansoou.mp3"></audio>
+
+    <script src="topperproject.js"></script>
+</body>
+</html>

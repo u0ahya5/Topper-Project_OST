@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+
+h1{
+    text-emphasis-color: red;
+    margin: none;
+    height: 200px;
+    text-shadow: tomato;
+    background-color: rgb(55, 81, 184);
+}

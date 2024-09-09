@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    height: 5000px;
+    background-color: #f8f5d6;
+    text-align: center;
+    font-family: 'Diphylleia', sans-serif; /* 기본 폰트 적용 */
+}
+
+section {
+    height: 900px; 
+    width: 100%; /* 너비를 화면 전체로 설정 */
+    background-image: url("images/thatyear.png");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; /* 배경 이미지 고정 */
+}
+
+h1 {
+    font-family: 'Diphylleia', sans-serif; /* h1에 폰트 적용 */
+    color: #7b9441;
+}
+
+p {
+    color: #455f12;
+}
+
+button {
+    size: 300px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, #797f26, #b4eeb4);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: rgb(250, 255, 192);
+    font-size: 18px;
+    font-family: 'Gowun Batang', serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, rgb(121, 127, 38), #6b8e23);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center;
+    gap: 10px; /* 캐릭터 간의 간격 조정 */
+    margin: 20px;
+}
+
+.character {
+    position: relative;
+    text-align: center;
+    width: 25%; /* 각 캐릭터의 너비, 크기를 더 줄임 */
+}
+
+.character-img {
+    max-width: 50%; /* 이미지 크기를 더 줄임 */
+    height: auto;
+    transition: transform 0.3s; /* 이미지 확대 애니메이션 */
+}
+
+.character-text {
+    margin-top: 10px; /* 텍스트 위 여백 */
+}
+
+.description {
+    font-size: 17px;
+    text-size-adjust: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 180px; /* 설명 텍스트 박스 너비 조정 */
+    padding: 10px;
+    background-color: rgba(250, 255, 192, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* 투명도 변화 애니메이션 */
+}
+.question{
+    background-color:#aec384;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: start;
+    text-shadow: #30420d;
+}
+.question p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #103b19;
+    margin-bottom: 10px;
+}
+.pictureinterview1st{
+    float: right;
+    border-radius: 25%;
+    width: 50%; /* 사진 너비를 50%로 설정 */
+    height: auto; /* 비율에 맞게 자동으로 높이 조정 */
+    margin-right: 10px; /* 오른쪽 여백을 추가 */
+}
+
+/* 답변 컨테이너 스타일 */
+.gooksanswer {
+    background-color: #fdffc6; 
+    border-radius: 8px;
+    padding: 10px 15px; /* 최소한의 여백 */
+    display: inline-block; /* 텍스트 크기에 맞춰 박스 크기 조정 */
+    color: #e3e4db; /* 밝은 그레이시 화이트 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+    line-height: 1.6; /* 텍스트 간격 조정 */
+    margin-left: 30px;
+}
+
+/* 인용문 스타일 */
+.gooksanswer .quote {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    color: #dce1b5; /* 부드러운 연두색 톤 */
+}
+
+/* 저자 이름 스타일 */
+.gooksanswer .author {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 8px;
+    color: #b5c59e; /* 부드러운 올리브 그린 */
+}
+/* 답변 컨테이너 스타일 */
+.wonganswer {
+    background-color: #fdffc6; 
+    border-radius: 8px;
+    padding: 10px 15px; /* 최소한의 여백 */
+    display: inline-block; /* 텍스트 크기에 맞춰 박스 크기 조정 */
+    color: #e3e4db; /* 밝은 그레이시 화이트 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+    line-height: 1.6; /* 텍스트 간격 조정 */
+}
+
+/* 인용문 스타일 */
+.wonganswer .quote {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    color: #dce1b5; /* 부드러운 연두색 톤 */
+}
+
+/* 저자 이름 스타일 */
+.wonganswer .author {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 8px;
+    color: #b5c59e; /* 부드러운 올리브 그린 */
+}
+
+/* 이미지 컨테이너 스타일 */
+.image-container {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    gap: 10px; /* 이미지 간의 간격 조정 */
+    flex-wrap: wrap; /* 필요 시 줄 바꿈 허용 */
+}
+
+/* 이미지 기본 스타일 */
+.image-container img {
+    width: 45%; /* 이미지의 폭을 부모 컨테이너의 폭의 45%로 설정 */
+    height: auto; /* 비율을 유지하며 자동 높이 조정 */
+    max-width: 300px; /* 이미지의 최대 폭 설정 */
+    border-radius: 8px; /* 선택 사항: 모서리 둥글게 처리 */
+    object-fit: cover; /* 이미지 비율 유지 및 잘림 방지 */
+}
+
+
+#description-goook {
+    left: -200px; /* 국연수 설명 텍스트를 왼쪽에 배치 */
+    text-align: left; /* 텍스트 정렬 */
+}
+
+#description-choyoung {
+    right: -200px; /* 최웅 설명 텍스트를 오른쪽에 배치 */
+    text-align: left; /* 텍스트 정렬 */
+}
+
+/* 마우스 오버 시 이미지 확대 */
+.character:hover .character-img {
+    transform: scale(1.1);
+}
+
+/* 마우스 오버 시 설명 텍스트 표시 */
+.character:hover .description {
+    opacity: 1;
+}
+.iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    border: 3px solid #ddd; /* 테두리 색상 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 */
+    overflow: hidden; /* 내용이 테두리를 넘지 않게 */
+    background-color: #f9f9f9; /* 배경 색상 */
+    transition: transform 0.3s ease; /* 호버 효과를 위한 전환 */
+}
+
+.iframe:hover {
+    transform: scale(1.02); /* 호버 시 확대 효과 */
+    border-color: #bbb; /* 호버 시 테두리 색상 변경 */
+}
